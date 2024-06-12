@@ -39,4 +39,5 @@ console.log(typeof color); //objets
 console.log(typeof myobj); //undefined
 
 
-
+//stack(primitve) and heap (non-primitive)memory
+ 
