@@ -29,7 +29,7 @@ const gadi=["bmw","swift","toyota","tata"];
 const con=phool.concat(gadi);
 console.log(con);
 
-//spread 
+//spread Operator
 const combi=[...phool, ...gadi];
 console.log(combi);
 
