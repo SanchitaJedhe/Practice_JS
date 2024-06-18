@@ -28,7 +28,7 @@ let myObj= {
     age:18,
 
 }
-console.log(myObj);
+console.log();
 
 //function
 const myfun =function(){
