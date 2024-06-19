@@ -27,4 +27,34 @@ function addition2(n1,n2){
     return n1+n2
 }
 const result2 = addition2(8,3)
-console.log("result",result2);  //-->11
+//console.log("result",result2);  //-->11
+
+
+//rest opertor(...)
+function calculatePrice(...num1){
+    return num1
+}
+//console.log(calculatePrice(200,100,80,64,9000))
+
+//bab
+//handling the object in funtion
+const meUser = {
+    name:"sanuu",
+    id : 15
+}
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.name} and id is ${anyObject.id}`)
+}
+
+//handleObject(meUser);
+
+handleObject({
+    name : "maya",
+    id : 56
+})
+
+ const mynewArray=[20,80,90,66]
+ function returnSecValue(getArray){
+    return getArray[1]
+ }
+ console.log(returnSecValue(mynewArray));
