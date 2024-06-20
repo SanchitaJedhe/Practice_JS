@@ -48,13 +48,76 @@ function handleObject(anyObject){
 
 //handleObject(meUser);
 
-handleObject({
-    name : "maya",
-    id : 56
-})
+// handleObject({
+//     name : "maya",
+//     id : 56
+// })
 
  const mynewArray=[20,80,90,66]
  function returnSecValue(getArray){
     return getArray[1]
  }
- console.log(returnSecValue(mynewArray));
+ //console.log(returnSecValue(mynewArray));
+
+ //---------------------------------------------------------------------------------------
+ //-------Arrow function
+ // this ==current context
+
+ const user={
+    username :"mini",
+    age : 23,
+
+    WelcomeMsg : function(){
+        console.log(`hi ${this.username} , welcome to website`)
+    }
+ }
+//  user.WelcomeMsg();
+//  user.username="sanchi"
+//  user.WelcomeMsg() //changing valure cz this giving the current context
+
+ //console.log(this); //-->empty objects.
+
+ //const chai
+ const chai = ()=>{
+    let name1 ="sam"
+    console.log(this.name1);
+ }
+ //console.log(chai()); //--> undefined
+
+ //arrow function
+ //regulaar
+ const login=function(){
+
+ } 
+   //o r
+ const login1 = ()=>{
+console.log("logged in ")
+ }
+ login1();
+
+ //regular way
+ const substraction=function(n1,n2){
+    return n1+n2
+ }
+ const sub=substraction(5,5);
+ console.log(sub);
+//using arraow
+
+
+const substraction2=(n1,n2)=>n1+n2;
+const sub2=substraction2(10,10);
+//if er r having return in key value format then use this
+//const substraction2=(n1,n2)=> ({username:"sanchita"})
+console.log(sub2);
+
+ //-----------------------------------------------
+ //Immedietly invoked function expression(IIFE)
+//  (function  fun1(){
+//     console.log("hi dear")
+//  })();
+
+((name)=>{
+    console.log(`hi my name is ${name}`)
+
+})("sanchita");
+
