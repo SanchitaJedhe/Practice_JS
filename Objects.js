@@ -54,8 +54,18 @@ const Book={
     author :"george"
 }
 
-console.log(Book) 
+//console.log(Book) 
 //console.log(Book.author) //insted we can also use this (below line) and
 // :__ here it used to rename the variable name
 const {author : auth }=Book
-console.log(auth); //its simple 
+//console.log(auth); //its simple 
+//---------------------------------------------------
+
+//for in loop
+
+for (const key in Book) {
+    //console.log(key); -->will print only keys
+    console.log(`${key} is for ${Book[key]}`);
+   
+}
+
