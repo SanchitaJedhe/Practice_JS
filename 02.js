@@ -34,10 +34,46 @@ console.log();
 const myfun =function(){
     console.log("hello world");
 }
-console.log(typeof myfun ); // function
-console.log(typeof color); //objets
-console.log(typeof myobj); //undefined
+// console.log(typeof myfun ); // function
+// console.log(typeof color); //objets
+// console.log(typeof myobj); //undefined
 
 
 //stack(primitve) and heap (non-primitive)memory
  
+//for loop
+let myArray =["fruit","batman","kiwi","juice","delhi"]
+
+for(let i=0;i<myArray.length;i++){
+    const element=myArray[i];
+    //console.log(element);
+}
+
+
+for(let i=0;i<20;i++){
+    if(i == 5){
+        console.log('detected 5');
+        continue
+        //break
+    }
+  //console.log(`vlue labqh eet  ${i}`); 
+    
+}
+
+
+//Do-While loop
+
+//while(condition){ }
+let index =0
+while(index<=10){
+    //console.log(`value of index is ${index}`);
+    index=index+2
+}
+//----------------------------------------------
+let scores=1
+do {
+    //1st print what you want and chnages of them
+    console.log(`score is ${scores}`);
+    scores++
+    
+} while (scores<=5);
